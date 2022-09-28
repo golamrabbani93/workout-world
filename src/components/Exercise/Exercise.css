@@ -1,0 +1,17 @@
+.card {
+	border-radius: 5px;
+}
+.card-img {
+	padding: 10px;
+}
+
+.img {
+	background: #e55137c5;
+	border-radius: 15px;
+}
+
+.img img {
+	width: 220px;
+	margin: 0 auto;
+	display: block;
+}

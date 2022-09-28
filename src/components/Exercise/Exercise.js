@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Exercise.css';
 const Exercise = (props) => {
 	console.log(props.exercise);
 	const {name, img, time} = props.exercise;
@@ -7,17 +7,19 @@ const Exercise = (props) => {
 	return (
 		<div className="col">
 			<div className="card">
-				<img src={img} className="card-img-top" alt="..." />
-				<div className="card-body">
-					<h5 className="card-title">{name}</h5>
-					<p className="card-text">
-						This is a wider card with supporting text below as a natural lead-in to additional
-						content. This content is a little bit longer.
-					</p>
-					<p className="card-text">
-						<small className="text-muted">Last updated 3 mins ago</small>
-					</p>
+				<div className="card-img">
+					<div className="img">
+						<img src={img} className="card-img-top" alt="..." />
+					</div>
 				</div>
+
+				<div className="card-body">
+					<h5 className="card-title fw-bolder">{name}</h5>
+					<p className="card-text fw-bold">Time required : {time}s</p>
+				</div>
+				{/* <div className="list-btn">
+					<button className="btn btn-primary w-75 d-block m-auto mb-3">Add to list</button>
+				</div> */}
 			</div>
 		</div>
 	);
