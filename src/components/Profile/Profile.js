@@ -32,6 +32,11 @@ const Profile = (props) => {
 				<Fitness></Fitness>
 				<Break getbreakTime={getbreakTime}></Break>
 				<Details total={total} breakTime={breakTime}></Details>
+				<div className="list-btn pt-5">
+					<button className="btn btn-primary  d-block m-auto mb-3 fitness-font ">
+						Activity Completed
+					</button>
+				</div>
 			</div>
 		</div>
 	);
