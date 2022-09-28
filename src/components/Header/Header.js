@@ -7,7 +7,7 @@ const Header = () => {
 			<div className="container">
 				<nav className="navbar navbar-expand-lg">
 					<div className="container-fluid">
-						<a className="navbar-brand" href="/home">
+						<a className="navbar-brand d-block m-auto" href="/home">
 							<i className="fa-solid fa-dumbbell me-2"></i>Workout World
 						</a>
 					</div>

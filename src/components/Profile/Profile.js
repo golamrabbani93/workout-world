@@ -19,7 +19,7 @@ const Profile = (props) => {
 		}
 	};
 	return (
-		<div>
+		<div className="profile-container">
 			<div className="profile d-flex align-items-center justify-content-center pt-4">
 				<div className="profile-img ">
 					<img src={profileImage} alt="" />

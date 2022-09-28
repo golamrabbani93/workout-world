@@ -32,9 +32,9 @@ const Exercises = () => {
 	return (
 		<div className="exercize-container">
 			<div className="container-fluid">
+				<h2 className="mb-5 mt-5 head-color text-center">Select today’s exercise</h2>
 				<div className="row">
 					<div className="col-xl-8">
-						<h2 className="mb-5">Select today’s exercise</h2>
 						{/* <h2>{totalTime}</h2> */}
 						<div className="row row-cols-1 row-cols-md-3 g-4">
 							{exercizes.map((exercise) => (
