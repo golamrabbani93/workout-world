@@ -1,9 +1,18 @@
 import React from 'react';
-
+import profileImage from './mypng.png';
+import './Profile.css';
 const Profile = () => {
 	return (
 		<div>
-			<h2>profile</h2>
+			<div className="profile d-flex align-items-center justify-content-center pt-4">
+				<div className="profile-img ">
+					<img src={profileImage} alt="" />
+				</div>
+				<div className="profile-data ms-3 text-white">
+					<h3>Golam Rabbani</h3>
+					<h5>Rajshahi,Bangladesh</h5>
+				</div>
+			</div>
 		</div>
 	);
 };
