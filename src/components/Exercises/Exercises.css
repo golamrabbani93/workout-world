@@ -1,3 +1,7 @@
-.col-xl-9 {
-	margin: 50px 50px;
+.col-xl-8 {
+	margin: 50px 60px;
+}
+.col-xl-3 {
+	background-color: #e55137;
+	margin-top: 10px;
 }

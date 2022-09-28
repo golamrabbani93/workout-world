@@ -13,7 +13,7 @@ const Exercises = () => {
 		<div className="exercize-container">
 			<div className="container-fluid">
 				<div className="row">
-					<div className="col-xl-9">
+					<div className="col-xl-8">
 						<h2 className="mb-5">Select today’s exercise</h2>
 						<div className="row row-cols-1 row-cols-md-3 g-4">
 							{exercizes.map((exercise) => (

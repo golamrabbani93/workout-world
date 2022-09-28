@@ -1,6 +1,10 @@
+.header {
+	background-color: #e55137;
+}
+
 .navbar-brand {
-	color: #e55137;
-	transition: color 0.3s;
+	color: #ffff;
+	transition: color 0.4s;
 	font-size: 30px;
 	font-weight: bold;
 }

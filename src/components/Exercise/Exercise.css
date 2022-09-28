@@ -1,12 +1,13 @@
 .card {
-	border-radius: 5px;
+	border-radius: 10px;
+	border: 1px solid #e55137;
 }
 .card-img {
 	padding: 10px;
 }
 
 .img {
-	background: #e55137c5;
+	background: #e55137;
 	border-radius: 15px;
 }
 
