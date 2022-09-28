@@ -1,5 +1,6 @@
 import React from 'react';
 import Break from '../Break/Break';
+import Details from '../Details/Details';
 import Fitness from '../Fitness/Fitness';
 import profileImage from './mypng.png';
 import './Profile.css';
@@ -26,6 +27,7 @@ const Profile = (props) => {
 			<div>
 				<Fitness></Fitness>
 				<Break></Break>
+				<Details></Details>
 			</div>
 		</div>
 	);
