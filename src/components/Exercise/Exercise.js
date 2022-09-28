@@ -1,9 +1,9 @@
 import React from 'react';
 import './Exercise.css';
 const Exercise = (props) => {
-	console.log(props.exercise);
-	const {name, img, time} = props.exercise;
-	console.log(img);
+	const {addToList, exercise} = props;
+
+	const {name, img, time} = exercise;
 	return (
 		<div className="col">
 			<div className="card">
@@ -18,7 +18,12 @@ const Exercise = (props) => {
 					<p className="card-text fw-bold">Time required : {time}s</p>
 				</div>
 				<div className="list-btn">
-					<button className="btn btn-primary w-75 d-block m-auto mb-3">Add to list</button>
+					<button
+						onClick={() => addToList(exercise)}
+						className="btn btn-primary w-75 d-block m-auto mb-3"
+					>
+						Add to list
+					</button>
 				</div>
 			</div>
 		</div>
