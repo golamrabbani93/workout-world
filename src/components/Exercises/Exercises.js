@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Exercise from '../Exercise/Exercise';
+import Profile from '../Profile/Profile';
 import './Exercises.css';
 
 const Exercises = () => {
@@ -21,7 +22,9 @@ const Exercises = () => {
 							))}
 						</div>
 					</div>
-					<div className="col-xl-3">2</div>
+					<div className="col-xl-3">
+						<Profile></Profile>
+					</div>
 				</div>
 			</div>
 		</div>
