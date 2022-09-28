@@ -26,7 +26,9 @@ const Profile = (props) => {
 				</div>
 				<div className="profile-data ms-3 text-white">
 					<h3>Golam Rabbani</h3>
-					<h5>Rajshahi,Bangladesh</h5>
+					<h5>
+						<i class="fa-solid fa-location-dot me-2"></i>Rajshahi,Bangladesh
+					</h5>
 				</div>
 			</div>
 			<div>
