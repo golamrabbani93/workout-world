@@ -1,37 +1,37 @@
 [
     {
         "id":1,
-        "img":"./images/personalized-programs-1.png",
+        "img":"personalized-programs-1.png",
         "name":"Lift Heavy: Arms",
         "time":30
     },
     {
         "id":2,
-        "img":"images/personalized-programs-2.png",
+        "img":"personalized-programs-2.png",
         "name":"Intro to Dance Cardio",
         "time":20
     },
     {
         "id":3,
-        "img":"images/personalized-programs-3.png",
+        "img":"personalized-programs-3.png",
         "name":"HIIT Favorites",
         "time":40
     },
     {
         "id":4,
-        "img":"images/personalized-programs-4.png",
+        "img":"personalized-programs-4.png",
         "name":"Strong Run",
         "time":50
     },
     {
         "id":5,
-        "img":"images/personalized-programs-5.png",
+        "img":"personalized-programs-5.png",
         "name":"Low Impact Challenge",
         "time":50
     },
     {
         "id":6,
-        "img":"images/personalized-programs-6.png",
+        "img":"personalized-programs-6.png",
         "name":"Push-Up Challenge",
         "time":60
     }

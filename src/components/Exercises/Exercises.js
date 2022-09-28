@@ -4,7 +4,7 @@ import Exercise from '../Exercise/Exercise';
 const Exercises = () => {
 	const [exercizes, setExercizes] = useState([]);
 	useEffect(() => {
-		fetch('fakeDb/fakeData.json')
+		fetch('fakeData.json')
 			.then((res) => res.json())
 			.then((data) => setExercizes(data));
 	}, []);
