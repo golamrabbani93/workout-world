@@ -1,4 +1,5 @@
 import React from 'react';
+import Break from '../Break/Break';
 import Fitness from '../Fitness/Fitness';
 import profileImage from './mypng.png';
 import './Profile.css';
@@ -16,6 +17,7 @@ const Profile = () => {
 			</div>
 			<div>
 				<Fitness></Fitness>
+				<Break></Break>
 			</div>
 		</div>
 	);
