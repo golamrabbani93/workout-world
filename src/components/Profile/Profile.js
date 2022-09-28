@@ -10,8 +10,6 @@ const Profile = (props) => {
 	for (const totalTime of totalList) {
 		total = total + totalTime.time;
 	}
-
-	console.log('🚀 ~ file: Profile.js ~ line 8 ~ Profile ~ totals', totalList);
 	return (
 		<div>
 			<div className="profile d-flex align-items-center justify-content-center pt-4">
@@ -19,7 +17,6 @@ const Profile = (props) => {
 					<img src={profileImage} alt="" />
 				</div>
 				<div className="profile-data ms-3 text-white">
-					<h3>{total}</h3>
 					<h3>Golam Rabbani</h3>
 					<h5>Rajshahi,Bangladesh</h5>
 				</div>
@@ -27,7 +24,7 @@ const Profile = (props) => {
 			<div>
 				<Fitness></Fitness>
 				<Break></Break>
-				<Details></Details>
+				<Details total={total}></Details>
 			</div>
 		</div>
 	);
