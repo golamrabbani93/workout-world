@@ -17,7 +17,6 @@ const Profile = (props) => {
 			setBreakTime(breakTimes);
 		}
 	};
-	console.log(breakTime);
 	return (
 		<div>
 			<div className="profile d-flex align-items-center justify-content-center pt-4">
@@ -32,7 +31,7 @@ const Profile = (props) => {
 			<div>
 				<Fitness></Fitness>
 				<Break getbreakTime={getbreakTime}></Break>
-				<Details total={total}></Details>
+				<Details total={total} breakTime={breakTime}></Details>
 			</div>
 		</div>
 	);

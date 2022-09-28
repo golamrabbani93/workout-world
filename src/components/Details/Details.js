@@ -1,7 +1,7 @@
 import React from 'react';
 import './Details.css';
 const Details = (props) => {
-	const {total} = props;
+	const {total, breakTime} = props;
 
 	return (
 		<div className="pt-5 mt-2 text-white">
@@ -24,7 +24,7 @@ const Details = (props) => {
 
 				<div className="col-xl-6">
 					<h4>
-						10 <span>seconds</span>
+						{breakTime} <span>seconds</span>
 					</h4>
 				</div>
 			</div>
