@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Break from '../Break/Break';
 import Details from '../Details/Details';
 import Fitness from '../Fitness/Fitness';
@@ -10,10 +10,14 @@ const Profile = (props) => {
 	for (const totalTime of totalList) {
 		total = total + totalTime.time;
 	}
-
-	const breakTime = (e) => {
-		console.log(e);
+	const [breakTime, setBreakTime] = useState([]);
+	const getbreakTime = (e) => {
+		if (e.target.classList.contains('break-font')) {
+			const breakTimes = e.target.innerText;
+			setBreakTime(breakTimes);
+		}
 	};
+	console.log(breakTime);
 	return (
 		<div>
 			<div className="profile d-flex align-items-center justify-content-center pt-4">
@@ -27,7 +31,7 @@ const Profile = (props) => {
 			</div>
 			<div>
 				<Fitness></Fitness>
-				<Break breakTime={breakTime}></Break>
+				<Break getbreakTime={getbreakTime}></Break>
 				<Details total={total}></Details>
 			</div>
 		</div>
