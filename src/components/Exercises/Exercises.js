@@ -5,7 +5,7 @@ const Exercises = () => {
 	useEffect(() => {
 		fetch('fakeDb/fakeData.json')
 			.then((res) => res.json())
-			.then((data) => console.log(data));
+			.then((data) => setExercizes(data));
 	}, []);
 	return (
 		<div className="exercize-container">
