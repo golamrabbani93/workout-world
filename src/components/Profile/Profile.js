@@ -1,4 +1,5 @@
 import React from 'react';
+import Fitness from '../Fitness/Fitness';
 import profileImage from './mypng.png';
 import './Profile.css';
 const Profile = () => {
@@ -12,6 +13,9 @@ const Profile = () => {
 					<h3>Golam Rabbani</h3>
 					<h5>Rajshahi,Bangladesh</h5>
 				</div>
+			</div>
+			<div>
+				<Fitness></Fitness>
 			</div>
 		</div>
 	);
