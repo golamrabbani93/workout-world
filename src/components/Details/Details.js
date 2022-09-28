@@ -2,7 +2,6 @@ import React from 'react';
 import './Details.css';
 const Details = (props) => {
 	const {total, breakTime} = props;
-
 	return (
 		<div className="pt-5 mt-2 text-white">
 			<h2>Exercise Details</h2>

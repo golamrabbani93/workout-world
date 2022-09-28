@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Break from '../Break/Break';
 import Details from '../Details/Details';
 import Fitness from '../Fitness/Fitness';
 import ToastBtn from '../ToastBtn/ToastBtn';
+import {addTtime, getLocalTime} from '../utilities/addDb';
+
 import profileImage from './mypng.png';
 import './Profile.css';
 const Profile = (props) => {
@@ -16,8 +18,20 @@ const Profile = (props) => {
 		if (e.target.classList.contains('break-font')) {
 			const breakTimes = e.target.innerText;
 			setBreakTime(breakTimes);
+			addTtime(breakTimes);
 		}
 	};
+	useEffect(() => {
+		const localTime = getLocalTime();
+		if (localTime) {
+			for (const id in localTime) {
+				if (id) {
+					const newTime = localTime[id];
+					setBreakTime(newTime);
+				}
+			}
+		}
+	}, []);
 	return (
 		<div className="profile-container">
 			<div className="profile d-flex align-items-center justify-content-center pt-4">
@@ -27,7 +41,7 @@ const Profile = (props) => {
 				<div className="profile-data ms-3 text-white">
 					<h3>Golam Rabbani</h3>
 					<h5>
-						<i class="fa-solid fa-location-dot me-2"></i>Rajshahi,Bangladesh
+						<i className="fa-solid fa-location-dot me-2"></i>Rajshahi,Bangladesh
 					</h5>
 				</div>
 			</div>
