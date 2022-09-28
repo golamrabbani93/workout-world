@@ -10,6 +10,10 @@ const Profile = (props) => {
 	for (const totalTime of totalList) {
 		total = total + totalTime.time;
 	}
+
+	const breakTime = (e) => {
+		console.log(e);
+	};
 	return (
 		<div>
 			<div className="profile d-flex align-items-center justify-content-center pt-4">
@@ -23,7 +27,7 @@ const Profile = (props) => {
 			</div>
 			<div>
 				<Fitness></Fitness>
-				<Break></Break>
+				<Break breakTime={breakTime}></Break>
 				<Details total={total}></Details>
 			</div>
 		</div>
