@@ -10,6 +10,9 @@ const Exercises = () => {
 			.then((res) => res.json())
 			.then((data) => setExercizes(data));
 	}, []);
+	const exercizeTime = (time) => {
+		console.log(time);
+	};
 	return (
 		<div className="exercize-container">
 			<div className="container-fluid">
@@ -18,7 +21,11 @@ const Exercises = () => {
 						<h2 className="mb-5">Select today’s exercise</h2>
 						<div className="row row-cols-1 row-cols-md-3 g-4">
 							{exercizes.map((exercise) => (
-								<Exercise exercise={exercise} key={exercise.id}></Exercise>
+								<Exercise
+									exercise={exercise}
+									key={exercise.id}
+									exercizeTime={exercizeTime}
+								></Exercise>
 							))}
 						</div>
 					</div>
