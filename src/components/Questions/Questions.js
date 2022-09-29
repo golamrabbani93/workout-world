@@ -74,7 +74,7 @@ const Questions = () => {
 							aria-expanded="false"
 							aria-controls="collapseThree"
 						>
-							Accordion Item #3
+							What can be done with use effect?
 						</button>
 					</h2>
 					<div
@@ -84,12 +84,10 @@ const Questions = () => {
 						data-bs-parent="#accordionExample"
 					>
 						<div className="accordion-body">
-							<strong>This is the third item's accordion body.</strong> It is hidden by default,
-							until the collapse plugin adds the appropriate classNamees that we use to style each
-							element. These classNamees control the overall appearance, as well as the showing and
-							hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-							our default variables. It's also worth noting that just about any HTML can go within
-							the <code>.accordion-body</code>, though the transition does limit overflow.
+							The useEffect Hook allows you to
+							<strong>perform side effects in your components.</strong> Some examples of side
+							effects are: fetching data, directly updating the DOM, and timers. useEffect accepts
+							two arguments. The second argument is optional.
 						</div>
 					</div>
 				</div>
