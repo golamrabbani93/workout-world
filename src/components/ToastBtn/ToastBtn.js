@@ -1,6 +1,7 @@
 import React from 'react';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './ToastBtn.css';
 const ToastBtn = () => {
 	const notify = () => {
 		toast.success('Wow Exercise Complete!', {
@@ -16,7 +17,7 @@ const ToastBtn = () => {
 	};
 	return (
 		<div className="list-btn pt-5">
-			<button onClick={notify} className="btn btn-primary  d-block m-auto mb-3 fitness-font ">
+			<button onClick={notify} className="btn btn-primary  d-block m-auto mb-3 toast-btn ">
 				Activity Completed
 			</button>
 			<ToastContainer />

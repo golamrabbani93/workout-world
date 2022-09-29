@@ -1,4 +1,18 @@
 .time {
 	border: 1px solid #fff;
 	padding: 3px;
+	padding-top: 10px;
+}
+.col-sm-6 > h4 {
+	font-size: 17px;
+}
+@media only screen and (min-width: 575px) {
+	.text-left {
+		text-align: end;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.col-sm-6 {
+		text-align: center;
+	}
 }

@@ -1,5 +1,5 @@
 .col-xl-8 {
-	margin: 50px 60px;
+	margin: 50px 50px;
 }
 .head-color {
 	color: #e55137;
@@ -11,4 +11,18 @@
 	background-color: #e55137;
 	margin-top: 50px;
 	padding-bottom: 20px;
+	border-radius: 12px;
+}
+@media only screen and (max-width: 700px) {
+	.col-xl-8 {
+		margin: 0;
+	}
+	.head-color {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.col-xl-8 {
+		margin: 0;
+	}
 }
