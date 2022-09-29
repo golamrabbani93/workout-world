@@ -3,10 +3,11 @@ import Break from '../Break/Break';
 import Details from '../Details/Details';
 import Fitness from '../Fitness/Fitness';
 import ToastBtn from '../ToastBtn/ToastBtn';
-import {addTtime, getLocalTime} from '../utilities/addDb';
+import {addTtime, getLocalTime} from '../../utilities/addDb';
 
 import profileImage from './mypng.png';
 import './Profile.css';
+
 const Profile = (props) => {
 	const {totalList} = props;
 	let total = 0;
