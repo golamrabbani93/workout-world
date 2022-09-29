@@ -43,7 +43,7 @@ const Questions = () => {
 							aria-expanded="false"
 							aria-controls="collapseTwo"
 						>
-							Accordion Item #2
+							Props vs State
 						</button>
 					</h2>
 					<div
@@ -53,12 +53,14 @@ const Questions = () => {
 						data-bs-parent="#accordionExample"
 					>
 						<div className="accordion-body">
-							<strong>This is the second item's accordion body.</strong> It is hidden by default,
-							until the collapse plugin adds the appropriate classNamees that we use to style each
-							element. These classNamees control the overall appearance, as well as the showing and
-							hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-							our default variables. It's also worth noting that just about any HTML can go within
-							the <code>.accordion-body</code>, though the transition does limit overflow.
+							<p>
+								<strong>Props :</strong> Props are used to pass data from one component to another.
+							</p>
+							<p>
+								<strong>State :</strong> The state is a local data storage that is local to the
+								component only and cannot be passed to other components. The this. setState property
+								is used to update the state values in the component
+							</p>
 						</div>
 					</div>
 				</div>
